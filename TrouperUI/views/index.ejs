@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app="TrouperApp">
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body ng-controller="TrouperCtrl">
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+    <ul>
+    	<li ng-repeat="user in users">
+    		{{user.name}}
+    	</li>
+    </ul>
+
+    <script src="/javascripts/bower.js"></script>
+    <script src="/javascripts/controllers.js"></script>
+  </body>
+</html>

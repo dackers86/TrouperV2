@@ -1,6 +1,4 @@
-var phonecatApp = angular.module('TrouperApp', []);
-
-phonecatApp.controller('TrouperCtrl', function ($scope) {
+app.controller('LoginController', function ($scope) {
   $scope.users = [
     {'name': 'Nexus S',
      'snippet': 'Fast just got faster with Nexus S.'},

@@ -5,15 +5,8 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body ng-controller="LoginController">
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-    <ul>
-    	<li ng-repeat="user in users">
-    		{{user.name}}
-    	</li>
-    </ul>
 
-    <a href="/account" >Linkys</a>
+  <div ng-view="" />
 
     <script src="/javascripts/bower.js"></script>
     <script src="/javascripts/angular/modules/angularapp.js"></script>

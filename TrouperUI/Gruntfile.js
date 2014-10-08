@@ -15,9 +15,10 @@ grunt.initConfig({
       }
     },
     sass: {
+      "globbing": true,
       dist: {
         files: {
-          'client/stylesheets/main.css': 'client/stylesheets/SASS/*.scss'
+          'client/stylesheets/main.css': 'client/stylesheets/*.scss'
         }
       }
     },

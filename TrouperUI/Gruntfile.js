@@ -15,13 +15,9 @@ grunt.initConfig({
       }
     },
     sass: {
-      options: {
-        sourceComments: 'map',
-        outputStyle: 'compressed'
-      },
       dist: {
         files: {
-          'css/styles.css': 'sass/styles.scss'
+          'client/stylesheets/main.css': 'client/stylesheets/SASS/*.scss'
         }
       }
     },
@@ -34,7 +30,7 @@ grunt.initConfig({
 
   grunt.loadNpmTasks('grunt-bower-concat');
   grunt.registerTask('default', ['sass:dist', 'watch']);
-  grunt.loadNpmTasks('grunt-sass');
+  grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
 };
 	

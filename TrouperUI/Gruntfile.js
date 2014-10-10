@@ -24,10 +24,11 @@ grunt.initConfig({
     sass: {
       dist: {
         files: {
-          'client/stylesheets/main.css': 'client/stylesheets/*.scss'
+          'client/stylesheets/main.css': 'client/sass/**/*.scss'
         }
       }
     },
+    
     bower_concat: {
       all: {
         dest: 'public/javascripts/bower.js'
@@ -35,7 +36,7 @@ grunt.initConfig({
     }
     });
 
-  grunt.loadNpmTasks('grunt-bower-concat');
+  //grunt.loadNpmTasks('grunt-bower-concat');
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-compass');

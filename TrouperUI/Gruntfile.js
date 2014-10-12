@@ -11,7 +11,7 @@ grunt.initConfig({
     },
     watch: {
       sass: {
-        files: ['sass/**/*.{scss,sass}','sass/_partials/**/*.{scss,sass}'],
+        files: ['sass/**/*.{scss,sass}','sass/_components/**/*.{scss,sass}'],
         tasks: ['sass:dist']
       },
       livereload: {
@@ -24,7 +24,7 @@ grunt.initConfig({
     sass: {
       dist: {
         files: {
-          'client/stylesheets/main.css': 'client/sass/**/*.scss'
+          'public/stylesheets/main.css': 'client/sass/main.scss'
         }
       }
     },
